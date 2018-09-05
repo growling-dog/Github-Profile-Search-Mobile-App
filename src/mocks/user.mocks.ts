@@ -17,7 +17,7 @@ const userList: User[] = [
         avatar_url: 'http://i.imgur.com/TzWcihb.png'
     },
     {
-        name: 'Parky Chow',
+        name: 'Parky',
         company: 'Accenture Hong Kong',
         location: 'Hong Kong',
         bio: 'Angular Ionic MongoDB Express',

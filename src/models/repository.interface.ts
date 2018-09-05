@@ -1,4 +1,4 @@
-import { User } from './user';
+import { User } from './user.interface';
 
 export interface Repository {
     archive_url?: string;
@@ -50,7 +50,9 @@ export interface Repository {
     notifications_url?: string;
     open_issues?: number;
     open_issues_count?: number;
+    
     owner?: User;
+
     private?: boolean;
     pulls_url?: string;
     pushed_at?: Date;

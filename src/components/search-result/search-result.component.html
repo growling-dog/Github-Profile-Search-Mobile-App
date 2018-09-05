@@ -1,0 +1,18 @@
+<ion-grid>
+    <ion-row justify-content-center margin-bottom>
+      <div *ngIf="user$ | async as user; else loading" text-center>
+          <ion-avatar item-left>
+              <img src="{{user?.avatar_url}}">
+          </ion-avatar>          
+          <h2>{{user?.name}}</h2>
+          <h3>{{user?.company}}</h3>
+          <p>{{user?.location}}</p>
+          <p>{{user?.bio}}</p>
+      </div>
+      <ng-template #loading>
+        <h1>
+          Loading...
+        </h1>
+      </ng-template>
+    </ion-row>
+</ion-grid>
